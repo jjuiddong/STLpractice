@@ -18,6 +18,17 @@ int main ()
 		}
 	}
 
+	std::cout << "delete foo \n";
+	for (int i=0; i < 100; ++i)
+	{
+		foo.pop_back();
+		if (sz!=foo.capacity()) {
+			sz = foo.capacity();
+			int size = foo.size();
+			std::cout << "capacity changed: " << sz << " size: " << size << '\n';
+		}
+	}
+
 	std::vector<int> bar;
 	sz = bar.capacity();
 	bar.reserve(100);   // this is the only difference with foo above

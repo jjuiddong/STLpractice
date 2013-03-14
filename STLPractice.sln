@@ -6,7 +6,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindSimple", "BindSimple\BindSimple.vcxproj", "{4E419D5A-92E4-4F5C-A396-1329F74CA4D0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorRotate", "VectorRotate\VectorRotate.vcxproj", "{5B217287-1F7F-4475-BD92-BA19FD65A3FB}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorReserve", "VectorReserve\VectorReserve.vcxproj", "{02652C85-65C5-41CF-8771-8555A8430123}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTemplateFunc", "BindTemplateFunc\BindTemplateFunc.vcxproj", "{EAC49C46-0922-4256-8E61-8A041AC57127}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +33,10 @@ Global
 		{02652C85-65C5-41CF-8771-8555A8430123}.Debug|Win32.Build.0 = Debug|Win32
 		{02652C85-65C5-41CF-8771-8555A8430123}.Release|Win32.ActiveCfg = Release|Win32
 		{02652C85-65C5-41CF-8771-8555A8430123}.Release|Win32.Build.0 = Release|Win32
+		{EAC49C46-0922-4256-8E61-8A041AC57127}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EAC49C46-0922-4256-8E61-8A041AC57127}.Debug|Win32.Build.0 = Debug|Win32
+		{EAC49C46-0922-4256-8E61-8A041AC57127}.Release|Win32.ActiveCfg = Release|Win32
+		{EAC49C46-0922-4256-8E61-8A041AC57127}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

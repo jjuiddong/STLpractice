@@ -51,6 +51,12 @@ bool IsSameName4(const CA &t, const std::string &name) {
 	return t.GetName() == name;
 }
 
+template<class T>
+bool IsSameValue(const T &tx, const T &ty)
+{
+	return tx == ty;
+}
+
 void DispA( CA &a ) {
 	a.Display();
 }
@@ -72,6 +78,14 @@ int  main()
 		boost::bind(&IsSameName<CA*>, _1, "cc") );
 	if (AList.end() != it1)
 		(*it1)->Display();
+
+	auto it2 = std::find_if(AList.begin(), AList.end(), 
+		boost::bind(&IsSameValue<std::string>, 
+			boost::bind(&CA::GetName, _1), "aa") );
+	if (AList.end() != it2)
+		(*it2)->Display();
+
+	//bool bb = IsSameValue(std::string("aaa"), std::string("aaa"));
 
 	std::list<CA> AObjList;
 	AObjList.push_back( CA("aa") );
