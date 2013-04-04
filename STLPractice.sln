@@ -10,6 +10,7 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorReserve", "VectorReserve\VectorReserve.vcxproj", "{02652C85-65C5-41CF-8771-8555A8430123}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTemplateFunc", "BindTemplateFunc\BindTemplateFunc.vcxproj", "{EAC49C46-0922-4256-8E61-8A041AC57127}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inserter", "inserter\inserter.vcxproj", "{F19101BF-9654-48AB-B593-3E36F0277A7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +38,10 @@ Global
 		{EAC49C46-0922-4256-8E61-8A041AC57127}.Debug|Win32.Build.0 = Debug|Win32
 		{EAC49C46-0922-4256-8E61-8A041AC57127}.Release|Win32.ActiveCfg = Release|Win32
 		{EAC49C46-0922-4256-8E61-8A041AC57127}.Release|Win32.Build.0 = Release|Win32
+		{F19101BF-9654-48AB-B593-3E36F0277A7B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F19101BF-9654-48AB-B593-3E36F0277A7B}.Debug|Win32.Build.0 = Debug|Win32
+		{F19101BF-9654-48AB-B593-3E36F0277A7B}.Release|Win32.ActiveCfg = Release|Win32
+		{F19101BF-9654-48AB-B593-3E36F0277A7B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
