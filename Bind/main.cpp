@@ -17,12 +17,12 @@ public:
 
 	const std::string& GetName() const { return m_Str; }
 
-	void Display()
+	virtual void Display()
 	{
 		std::cout << "Display " << m_Str << std::endl;
 	}
 
-	void Display2(int n)
+	virtual void Display2(int n)
 	{
 		std::cout << "Display " << m_Str << n << std::endl;
 	}
@@ -35,6 +35,25 @@ public:
 protected:
 	std::string m_Str;
 };
+
+// Derived class
+class CB : public CA
+{
+public:
+	CB(const std::string &str) : CA(str) {}
+	virtual void Display()
+	{
+		std::cout << "CB Display " << m_Str << std::endl;
+	}
+
+	virtual void Display2(int n)
+	{
+		std::cout << "CB Display " << m_Str << n << std::endl;
+	}
+};
+
+
+
 
 template<class T>
 bool IsSameName(const T &t, const std::string &name) {
@@ -70,8 +89,8 @@ int  main()
 	std::list<CA*> AList;
 	AList.push_back( new CA("aa") );
 	AList.push_back( new CA("bb") );
-	AList.push_back( new CA("cc") );
-	AList.push_back( new CA("dd") );
+	AList.push_back( new CB("cc") );
+	AList.push_back( new CB("dd") );
 
 	std::cout << std::endl;
 	auto it1 = std::find_if(AList.begin(), AList.end(), 
@@ -85,13 +104,17 @@ int  main()
 	if (AList.end() != it2)
 		(*it2)->Display();
 
+	std::cout << std::endl;
+	std::for_each(AList.begin(), AList.end(), 
+		boost::bind(&CA::Display, _1) );
+
 	//bool bb = IsSameValue(std::string("aaa"), std::string("aaa"));
 
 	std::list<CA> AObjList;
 	AObjList.push_back( CA("aa") );
 	AObjList.push_back( CA("bb") );
-	AObjList.push_back( CA("cc") );
-	AObjList.push_back( CA("dd") );
+	AObjList.push_back( CB("cc") );
+	AObjList.push_back( CB("dd") );
 
 	std::cout << std::endl;
 	auto it = std::find_if(AObjList.begin(), AObjList.end(), 
