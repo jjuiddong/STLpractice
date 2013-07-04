@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnorderedMap", "UnorderedMa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemFun", "MemFun\MemFun.vcxproj", "{6C6DEA7E-9711-43AA-BCCD-1E85E5A0ADB1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorCompare", "VectorCompare\VectorCompare.vcxproj", "{B64E89A2-E60A-4259-B082-318B0A310D7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -55,6 +57,10 @@ Global
 		{6C6DEA7E-9711-43AA-BCCD-1E85E5A0ADB1}.Debug|Win32.Build.0 = Debug|Win32
 		{6C6DEA7E-9711-43AA-BCCD-1E85E5A0ADB1}.Release|Win32.ActiveCfg = Release|Win32
 		{6C6DEA7E-9711-43AA-BCCD-1E85E5A0ADB1}.Release|Win32.Build.0 = Release|Win32
+		{B64E89A2-E60A-4259-B082-318B0A310D7C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B64E89A2-E60A-4259-B082-318B0A310D7C}.Debug|Win32.Build.0 = Debug|Win32
+		{B64E89A2-E60A-4259-B082-318B0A310D7C}.Release|Win32.ActiveCfg = Release|Win32
+		{B64E89A2-E60A-4259-B082-318B0A310D7C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
